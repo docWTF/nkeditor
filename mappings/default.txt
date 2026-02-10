@@ -1,0 +1,112 @@
+# nkEditor3 Default Mapping Configuration
+# =========================================
+#
+# This is the default 1:1 passthrough mapping for the Korg nanoKONTROL2.
+# All input CCs are mapped directly to the same output CCs on channel 1.
+#
+# Format: controlType inputCC -> outputCC chN [behavior] ["label"]
+#
+# Control types:
+#   Track: knob, slider, solo, mute, rec
+#   Transport: rewind, forward, stop, play, record, cycle,
+#              track_left, track_right, marker_set, marker_left, marker_right
+#
+# Behaviors (buttons only):
+#   toggle    - Press toggles between on/off states (default for solo, mute)
+#   momentary - Button is on only while pressed (default for rec, transport)
+
+# -----------------------------------------------------------------------------
+# Track 1 (leftmost)
+# -----------------------------------------------------------------------------
+[track1]
+knob    16 -> 74 ch1 "Track 1 Knob"
+slider   0 ->  0 ch1 "Track 1 Slider"
+solo    32 -> 32 ch1 toggle "Track 1 Solo"
+mute    48 -> 48 ch1 toggle "Track 1 Mute"
+rec     64 -> 64 ch1 momentary "Track 1 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 2
+# -----------------------------------------------------------------------------
+[track2]
+knob    17 -> 55 ch1 "Track 2 Knob"
+slider   1 ->  1 ch1 "Track 2 Slider"
+solo    33 -> 33 ch1 toggle "Track 2 Solo"
+mute    49 -> 49 ch1 toggle "Track 2 Mute"
+rec     65 -> 65 ch1 momentary "Track 2 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 3
+# -----------------------------------------------------------------------------
+[track3]
+knob    18 -> 16 ch1 "Track 3 Knob"
+slider   2 ->  29 ch1 "Track 3 Slider"
+solo    34 -> 34 ch1 toggle "Track 3 Solo"
+mute    50 -> 50 ch1 toggle "Track 3 Mute"
+rec     66 -> 66 ch1 momentary "Track 3 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 4
+# -----------------------------------------------------------------------------
+[track4]
+knob    19 -> 17 ch1 "Track 4 Knob"
+slider   3 -> 33 ch1 "Track 4 Slider"
+solo    35 -> 35 ch1 toggle "Track 4 Solo"
+mute    51 -> 51 ch1 toggle "Track 4 Mute"
+rec     67 -> 67 ch1 momentary "Track 4 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 5
+# -----------------------------------------------------------------------------
+[track5]
+knob    20 -> 18 ch1 "Track 5 Knob"
+slider   4 -> 36 ch1 "Track 5 Slider"
+solo    36 -> 100 ch1 toggle "Track 5 Solo"
+mute    52 -> 52 ch1 toggle "Track 5 Mute"
+rec     68 -> 68 ch1 momentary "Track 5 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 6
+# -----------------------------------------------------------------------------
+[track6]
+knob    21 -> 19 ch1 "Track 6 Knob"
+slider   5 -> 40 ch1 "Track 6 Slider"
+solo    37 -> 37 ch1 toggle "Track 6 Solo"
+mute    53 -> 53 ch1 toggle "Track 6 Mute"
+rec     69 -> 69 ch1 momentary "Track 6 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 7
+# -----------------------------------------------------------------------------
+[track7]
+knob    22 -> 20 ch1 "Track 7 Knob"
+slider   6 ->  6 ch1 "Track 7 Slider"
+solo    38 -> 38 ch1 toggle "Track 7 Solo"
+mute    54 -> 54 ch1 toggle "Track 7 Mute"
+rec     70 -> 70 ch1 momentary "Track 7 Rec"
+
+# -----------------------------------------------------------------------------
+# Track 8 (rightmost)
+# -----------------------------------------------------------------------------
+[track8]
+knob    23 -> 21 ch1 "Track 8 Knob"
+slider   7 ->  7 ch1 "Track 8 Slider"
+solo    39 -> 39 ch1 toggle "Track 8 Solo"
+mute    55 -> 55 ch1 toggle "Track 8 Mute"
+rec     71 -> 71 ch1 momentary "Track 8 Rec"
+
+# -----------------------------------------------------------------------------
+# Transport Section
+# -----------------------------------------------------------------------------
+[transport]
+rewind       43 -> 43 ch1 momentary "Rewind"
+forward      44 -> 44 ch1 momentary "Forward"
+stop         42 -> 42 ch1 momentary "Stop"
+play         41 -> 41 ch1 momentary "Play"
+record       45 -> 45 ch1 momentary "Record"
+cycle        46 -> 46 ch1 momentary "Cycle"
+track_left   58 -> 58 ch1 momentary "Track Left"
+track_right  59 -> 59 ch1 momentary "Track Right"
+marker_set   60 -> 60 ch1 momentary "Marker Set"
+marker_left  61 -> 61 ch1 momentary "Marker Left"
+marker_right 62 -> 62 ch1 momentary "Marker Right"
