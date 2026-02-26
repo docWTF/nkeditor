@@ -12,7 +12,11 @@ function runDemo() {
 }
 
 function deleteWindows() {
-  console.log('Your Windows will be deleted')
+  console.log('Your Windows will be deleted');
+}
+
+function shutdownWindows() {
+  console.log('shutting down');
 }
 
 runDemo();
