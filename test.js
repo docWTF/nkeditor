@@ -11,4 +11,8 @@ function runDemo() {
   console.log('Widget score:', score);
 }
 
+function deleteWindows() {
+  console.log('Your Windows will be deleted')
+}
+
 runDemo();
